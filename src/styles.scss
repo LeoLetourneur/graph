@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body,
+app-root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chart-container {
+    width: 2800px !important;
+    height: 100% !important;
+    border: 1px solid rgb(0, 0, 134);
+    background: linear-gradient(to left, #209DB3, #361973);
+    overflow: scroll;
+}
+
+.chart-over {
+    filter: blur(20px);
+    width:50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.7);
+    padding: 5px;
+    text-align: center;
+    color: #32468A;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px 20px;
+
+    &.bottom {
+        transform: translateX(-50%) translateY(-100px);
+    }
+
+    &.top {
+        transform: translateX(-50%) translateY(30px);
+    }
+} 

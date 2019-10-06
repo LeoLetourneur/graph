@@ -1,0 +1,8 @@
+<div class="chart-container">
+    <canvas #revenueLineChart></canvas>
+    <div *ngFor="let text of texts" 
+        class="text {{text.p}}"
+        [ngStyle]="{'left.px': text.x, 'top.px': text.y}"
+        [innerHtml]="text.t"></div>
+</div>
+<div class="chart-over"></div>
